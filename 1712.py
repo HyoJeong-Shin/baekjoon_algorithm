@@ -14,3 +14,17 @@ if b >= c:
     print(-1)
 else:
     print(int(a/(c-b)) + 1)
+
+
+'''틀린 코드
+a, b, c = map(int, input().split())
+n = 1
+while True:
+    try:
+        n += 1
+        if a + b*n <= c*n:
+            print(n)
+            break
+    except:
+        print(-1)
+'''
