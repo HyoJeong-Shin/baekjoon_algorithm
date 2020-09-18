@@ -16,7 +16,7 @@ else:
     print(int(a/(c-b)) + 1)
 
 
-'''틀린 코드
+'''시간 초과
 a, b, c = map(int, input().split())
 n = 1
 while True:
