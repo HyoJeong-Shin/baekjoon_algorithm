@@ -51,3 +51,20 @@ for i in range(t):
    : 가독성을 위해 i의 제곱값으로.
    시간복잡도 O(루트N)
 '''
+
+'''
+스터디 해설
+arr = [0]*10001
+arr[1] = 1
+for i in range(2, 98):
+    for j in range(i * 2, 10001, i):
+        arr[j] = 1
+        
+t = int(input())
+for i in range(t):
+    n = int(input())
+    for j in range(n // 2, 1, -1):
+        if arr[n - j] == 0 and arr[j] == 0:
+            print(j, n - j)
+            break
+'''
