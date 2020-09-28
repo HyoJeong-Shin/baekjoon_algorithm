@@ -1,0 +1,5 @@
+n = int(input())
+a = list(map(int, str(n)))
+a.sort()    #a.sort(reverse=true)
+a.reverse()
+for a in a:print(a, end='')
